@@ -71,7 +71,7 @@ SELECT id, username, password FROM users WHERE username='admin' --' AND password
 
 The query selects the admin row and never evaluates the password condition.
 
-##Live demo
+## Live demo
 
 1. Open <http://127.0.0.1:5000/login> and show that both panels start empty.
 2. Log in normally with `admin` / `admin123` to establish the expected flow.
