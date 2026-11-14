@@ -8,9 +8,6 @@ It shows the same login check twice:
 | `POST /login` | String-concatenated SQL | Intentionally exploitable |
 | `POST /login/fixed` | Parameterized SQL (`?` placeholders) | Treats payloads as data |
 
-> **Warning:** This app is intentionally insecure. Run it on localhost only for
-> authorised coursework. Never deploy it or expose it to a network.
-
 ## Run it
 
 ```bash
