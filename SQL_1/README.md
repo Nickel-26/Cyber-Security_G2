@@ -105,6 +105,13 @@ SQLite then binds the submitted strings to the placeholders as values. Quotes,
 `--`, `OR`, and other SQL syntax in the input are treated as literal characters,
 so the injected payload simply fails to match a real username.
 
+## Other Mitigations
+
+### Input Validation with Allow-Lists
+Another common defense against SQL injection is **input validation using allow-lists**.  An allow-list defines exactly what valid input looks like, for example, restricting a username field to alphanumeric characters only, with a fixed maximum length, and rejecting anything that doesn't match this pattern before it ever reaches the database query.
+
+This works because SQL injection payloads rely on special characters (`'`, `--`, `;` etc.) to break out of the intended query structure.
+
 ## Files
 
 ```text
